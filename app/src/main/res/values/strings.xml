@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyDynamicCalendarExample</string>
+    <string name="pre">pre</string>
 </resources>

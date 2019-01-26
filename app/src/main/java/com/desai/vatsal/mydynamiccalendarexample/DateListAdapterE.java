@@ -17,7 +17,9 @@ public class DateListAdapterE extends RecyclerView.Adapter<DateListAdapterE.View
 
 
     public DateListAdapterE(Context context, ArrayList<DateModelE> dateModelList) {
+
         this.context = context;
+
         this.dateModelList = dateModelList;
     }
 
@@ -32,16 +34,19 @@ public class DateListAdapterE extends RecyclerView.Adapter<DateListAdapterE.View
     @Override
     public void onBindViewHolder(DateListAdapterE.ViewHolder holder, int position) {
         holder.app_iamge.setImageResource(Integer.parseInt(String.valueOf(dateModelList.get(position).getFlag())));
+
     }
 
     @Override
     public int getItemCount() {
+
         return dateModelList.size();
+
     }
+
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView app_iamge;
-        TextView app_name;
 
 
         public ViewHolder(View itemView) {
